@@ -6,330 +6,312 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
+
   <body>
-
+    
     <div class="container">
-        <!-- Content here -->
-         <h1>Hello, world!</h1>
+      <!-- Content here -->
+        <h1>Hello, world!</h1>
+      <!-- Content here -->
+    </div>
+    
+    <div class="container">
+      <!-- Content navbar -->
+      <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Solll</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-         <!-- Content here -->
-      </div>
-   
-      <div class="container">
-        <!-- Content navbar -->
-        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Solll</a>
-
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="categoria.html">Categorias</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Cuenta
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Iniciar Sesion</a></li>
-
-                      <li><a class="dropdown-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrarse</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="ayuda.html">Ayuda</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true" href="contactos.html">Contactos</a>
-                  </li>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link" href="categoria.html">Categorias</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cuenta
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Iniciar Sesion</a></li>
+                  <li><a class="dropdown-item" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrarse</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="ayuda.html">Ayuda</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                  <button class="btn btn-outline-primary" type="submit">Buscar</button>
-                </form>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="contactos.html">Contactos</a>
+              </li>
+            </ul> 
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Content navbar -->
+    
+    
+    <!-- iniciar sesion -->
+    
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">INICIAR SESION</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
               </div>
             </div>
-          </nav>
-          <!-- Content navbar -->
-
-
-          <!-- iniciar sesion -->
-
-
-          
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">INICIAR SESION</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Ingresar</button>
-      </div>
-    </div>
-  </div>
-</div>
- <!-- iniciar sesion -->
-
-
- <!-- registro -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Registrate</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form class="row g-3">
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <div class="input-group">
-              <div class="input-group-text">@</div>
-              <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="name@example.com">
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Ingresar</button>
             </div>
           </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="inputPassword4">
-          </div>
-          <div class="col-md-4">
-            
-          
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="col-md-2">
-            <label for="inputZip" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-          <div class="col-12">
-            <label for="inputAddress2" class="form-label">Número Celular</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="+57 |">
-          </div>
-          <label for="inputState" class="form-label">Tipo De Documento</label>
-            <select id="inputState" class="form-select">
-              <option></option>
-              <option>Tarjeta De Identidad</option>
-              <option>Cedula De Ciudadania</option>
-              <option>PEP</option>
-            </select>
-          </div>
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">Ingresa Número De Documento</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="123">
-          </div>
-        </form>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar</button>
+    
+    <!-- iniciar sesion -->
+    
+    
+    <!-- registro -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Registrate</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <div class="input-group">
+                  <div class="input-group-text">@</div>
+                  <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="name@example.com">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-md-4">
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Número Celular</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="+57 |">
+                </div>
+                <label for="inputState" class="form-label">Tipo De Documento</label>
+                <select id="inputState" class="form-select">
+                  <option></option>
+                  <option>Tarjeta De Identidad</option>
+                  <option>Cedula De Ciudadania</option>
+                  <option>PEP</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Ingresa Número De Documento</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="123">
+              </div>
+            </form>
+           </div>
+           <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- registro -->
-
-
-<!-- Content carousel -->
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!-- registro -->
+    
+    <!-- Content carousel -->
+    
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/Img/Banner1.webp" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/Img/Banner1.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/Img/Banner2.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/Img/Banner3.webp" class="d-block w-100" alt="...">
-          </div>
+        <div class="carousel-item">
+          <img src="/Img/Banner2.webp" class="d-block w-100" alt="...">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon btn btn-outline-dark" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon btn btn-outline-dark" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div><br><br>
-      <!-- Content carousel -->
+        <div class="carousel-item">
+          <img src="/Img/Banner3.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon btn btn-outline-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon btn btn-outline-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div><br><br>
+    <!-- Content carousel -->
+    
+    
+    <h2 class="text-center py4">CATEGORIAS</h2><br>
 
-      <h2 class="text-center py4">CATEGORIAS</h2><br>
-
-      <div class="row  row-cols-1 row-cols-md-2 g-5">
+     <div class="row  row-cols-1 row-cols-md-2 g-5">
       <div class="card col-md-3 ">
         <img src="Img/cat1.webp" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Baterias</h5>
+          <h5 class="card-title text-center">Baterias</h5>
+         </div>
         </div>
-      </div>
-
-      <div class="card col-md-3" >
-        <img src="Img/cat2.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Smartwatch</h5>
-        </div>
-      </div>
-
-      <div class="card col-md-3">
-        <img src="Img/cat3.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Auriculares</h5>
-        </div>
-      </div>
-
-      <div class="card col-md-3">
-        <img src="Img/cat4.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Entretenimiento</h5>
-        </div>
-      </div>
-    </div> <br><br><br><br>
- <h2 class="text-center py5">SIENTE LA MÚSICA</h2><br>
-
- <div class="row">
-  <div class="card col-md-4 ">
-    <img src="Img/airpods-2-generacion.webp" class="card-img-top" alt="...">
-  </div>  
-
-  <div class="card col-md-4 ">
-    <img src="Img/airpods3-2-1.webp" class="card-img-top" alt="...">
-  </div>  
-
-  <div class="card col-md-4 ">
-    <img src="Img/airpodspro.webp" class="card-img-top" alt="...">
-  </div>  
-  <br><br><br><br>
-
-
-  <br><br>
-  <div class="col-md-4" style="max-width: 540px;">
-    <div class="row">
-      <div class="col-md-4"><br><br>
-        <img src="/Img/estrella.webp" class="img-fluid rounded-start" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body"><br><br><br>
-          <h5 class="card-title">Productos Tendencias</h5>
-          <p class="card-text"><small class="text-body-secondary">Te ofrecemos los productos lideres en el mercado</small></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4" style="max-width: 540px;">
-    <div class="row">
-      <div class=" col-md-4"><br><br>
-        <img src="/Img/camion.webp" class="img-fluid rounded-start" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body"><br><br><br>
-          <h5 class="card-title">Envíos a todo Colombia</h5>
-          <p class="card-text"><small class="text-body-secondary">Trabajamos de la misma manera con las transportadoras para que tus pedidos lleguen lo antes posible</small></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="col-md-4" style="max-width: 540px;">
-    <div class="row">
-      <div class=" col-md-4"><br><br>
-        <img src="/Img/auriculares.webp" class="img-fluid rounded-start" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body"><br><br><br>
-          <h5 class="card-title">Asesoría Personalizada</h5>
-          <p class="card-text"><small class="text-body-secondary">Contamos con un equipo de asesores dispuestos a resolver todas tus dudas</small></p><br><br><br>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br><br><br>
-  
-
-
-  <h2 class="text-center py5">PRODUCTOS DESTACADOS</h2><br><br><br>
-  <div class="col-md-3">
-  <div class="card text-center" style="width: 18rem;">
-    <img src="Img/Combo1.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Combo No. 1</h5>
-        <p class="card-text">Smartwatch + Diademas</p>
-        <h5>$300.000</h5>
-        <a href="#" class="btn btn-danger">Seleccionar</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-3">
-  <div class="card text-center" style="width: 18rem;">
-    <img src="Img/Proyector1.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Combo No. 2</h5>
-        <p class="card-text">Proyector + Control mini</p>
-        <h5>$500.000</h5>
-        <a href="#" class="btn btn-danger">Seleccionar</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-3">
-    <div class="card text-center" style="width: 18rem;">
-      <img src="Img/smartwatch1.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Combo No. 3</h5>
-          <p class="card-text">Smartwatch + Mini Audifonos</p>
-          <h5>$200.000</h5>
-          <a href="#" class="btn btn-danger">Seleccionar</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="card text-center" style="width: 18rem;">
-        <img src="Img/router1.webp" class="card-img-top" alt="...">
+        <div class="card col-md-3" >
+          <img src="Img/cat2.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Combo No. 4</h5>
-            <p class="card-text">ROUTER DE INTERNET</p>
-            <h5>$150.000</h5>
-            <a href="#" class="btn btn-danger">Seleccionar</a> 
+            <h5 class="card-title text-center">Smartwatch</h5>
           </div>
         </div>
-     </div>
-     
-<br><br>
-     <footer class="bg-dark text-light text-center py-2">
-      <p>Diseñado por Análisis y Desarrollo del software Ficha No. 2670687</p>
-      <p>&copy; 2024 Tienda JS</p>
-     </footer>
+        <div class="card col-md-3">
+          <img src="Img/cat3.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Auriculares</h5>
+          </div>
+        </div>
+        <div class="card col-md-3">
+          <img src="Img/cat4.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Entretenimiento</h5>
+          </div>
+        </div>
+      </div> <br><br><br><br>
+      
+    <h2 class="text-center py5">SIENTE LA MÚSICA</h2><br>
+    <div class="row">
+      <div class="card col-md-4 ">
+        <img src="Img/airpods-2-generacion.webp" class="card-img-top" alt="...">
+      </div>
+      <div class="card col-md-4 ">
+        <img src="Img/airpods3-2-1.webp" class="card-img-top" alt="...">
+      </div>
+      <div class="card col-md-4 ">
+        <img src="Img/airpodspro.webp" class="card-img-top" alt="...">
+      </div>
+      <br><br><br><br>
+      <br><br>
+      <div class="col-md-4" style="max-width: 540px;">
+        <div class="row">
+          <div class="col-md-4"><br><br>
+            <img src="/Img/estrella.webp" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body"><br><br><br>
+               <h5 class="card-title">Productos Tendencias</h5>
+               <p class="card-text"><small class="text-body-secondary">Te ofrecemos los productos lideres en el mercado</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4" style="max-width: 540px;">
+          <div class="row">
+            <div class=" col-md-4"><br><br>
+              <img src="/Img/camion.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body"><br><br><br>
+                <h5 class="card-title">Envíos a todo Colombia</h5>
+                <p class="card-text"><small class="text-body-secondary">Trabajamos de la misma manera con las transportadoras para que tus pedidos lleguen lo antes posible</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" style="max-width: 540px;">
+          <div class="row">
+            <div class=" col-md-4"><br><br>
+              <img src="/Img/auriculares.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body"><br><br><br>
+                <h5 class="card-title">Asesoría Personalizada</h5>
+                 <p class="card-text"><small class="text-body-secondary">Contamos con un equipo de asesores dispuestos a resolver todas tus dudas</small></p><br><br><br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br><br><br><br>
+          
+          
+      <h2 class="text-center py5">PRODUCTOS DESTACADOS</h2><br><br><br>
+        <div class="col-md-3">
+          <div class="card text-center" style="width: 18rem;">
+            <img src="Img/Combo1.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Combo No. 1</h5>
+              <p class="card-text">Smartwatch + Diademas</p>
+              <h5>$300.000</h5>
+              <a href="#" class="btn btn-danger">Seleccionar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center" style="width: 18rem;">
+            <img src="Img/Proyector1.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Combo No. 2</h5>
+              <p class="card-text">Proyector + Control mini</p>
+              <h5>$500.000</h5>
+               <a href="#" class="btn btn-danger">Seleccionar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+             <div class="card text-center" style="width: 18rem;">
+              <img src="Img/smartwatch1.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Combo No. 3</h5>
+                <p class="card-text">Smartwatch + Mini Audifonos</p>
+                <h5>$200.000</h5>
+                 <a href="#" class="btn btn-danger">Seleccionar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card text-center" style="width: 18rem;">
+                <img src="Img/router1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Combo No. 4</h5>
+                  <p class="card-text">ROUTER DE INTERNET</p>
+                  <h5>$150.000</h5>
+                  <a href="#" class="btn btn-danger">Seleccionar</a>
+                </div>
+              </div><br><br>
+            </div>
+            <br><br>
+            <footer class="bg-dark text-light text-center py-2">
+              <p>Diseñado por Análisis y Desarrollo del software Ficha No. 2670687</p>
+              <p>&copy; 2024 Tienda JS</p>
+            </footer>
 
   
    
